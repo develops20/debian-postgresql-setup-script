@@ -52,3 +52,14 @@ Allow connections from (IP address or CIDR, e.g., 0.0.0.0/0): 192.168.1.0/24
 * Firewall rules might be needed to open port 5432
 
 ---
+
+## To clear the machine in case of errors
+Run these commands
+```bash
+systemctl stop postgresql
+apt purge -y postgresql* postgresql-client* postgresql-contrib*
+apt autoremove --purge -y
+rm -rf /var/lib/postgresql/ /etc/postgresql/ /etc/postgresql-common/ /var/log/postgresql/ /usr/lib/postgresql/
+```
+---
+
