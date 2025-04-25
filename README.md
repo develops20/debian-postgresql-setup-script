@@ -2,6 +2,9 @@
 
 ⚡ Installs PostgreSQL, creates a database, user, and configures external access — in one simple step.
 
+# You Tube Video Here
+https://www.youtube.com/watch?v=ieHKvGRABAc
+
 ---
 
 ## Features
