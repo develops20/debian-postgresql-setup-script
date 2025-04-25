@@ -1,41 +1,54 @@
-PostgreSQL Ultimate Setup Script
+# PostgreSQL Ultimate Setup Script
+
 ⚡ Installs PostgreSQL, creates a database, user, and configures external access — in one simple step.
 
-Features
-✅ Installs PostgreSQL if missing
-✅ Creates a default cluster if missing
-✅ Configures custom database and user
-✅ Validates IP address input
-✅ Configures PostgreSQL to allow external connections
-✅ Restarts PostgreSQL cleanly
-✅ Safe to re-run: will not duplicate users or databases
+---
 
+## Features
+
+✅ Installs PostgreSQL if missing  
+✅ Creates a default cluster if missing  
+✅ Configures custom database and user  
+✅ Validates IP address input  
+✅ Configures PostgreSQL to allow external connections  
+✅ Restarts PostgreSQL cleanly  
+✅ Safe to re-run: will not duplicate users or databases  
+
+
+
+## Usage
+
+```bash
 chmod +x postgresqlStarter.sh
 ./postgresqlStarter.sh
+```
 
-You will be asked:
--Database name
--PostgreSQL port (default 5432)
--New username
--Password
--Allowed IP address or CIDR block (e.g., 0.0.0.0/0)
 
-Requirements
-Debian/Ubuntu-based Linux server
-Root or sudo access
-Internet access (to install PostgreSQL packages)
+## You will be asked:
 
-Example
+* Database name
+* PostgreSQL port (default 5432)
+* New username
+* Password
+* Allowed IP address or CIDR block (e.g., 0.0.0.0/0)
+
+## Requirements
+* Debian/Ubuntu-based Linux server
+* Root or sudo access
+* Internet access (to install PostgreSQL packages)
+
+```bash
 Enter database name: mydb
 Enter PostgreSQL port (default 5432): 5432
 Enter new username: myuser
 Enter password for user 'myuser':
 Allow connections from (IP address or CIDR, e.g., 0.0.0.0/0): 192.168.1.0/24
-
+```
 ✅ PostgreSQL will be installed and configured automatically!
 
-Notes
--Default listen address is set to *
--Default authentication method is md5 (password)
--Firewall rules might be needed to open port 5432
+## Notes
+* Default listen address is set to *
+* Default authentication method is md5 (password)
+* Firewall rules might be needed to open port 5432
 
+---
